@@ -220,6 +220,17 @@ class ProductVarient(models.Model):
     created_at=models.DateTimeField(auto_now_add=True)
 
 
+#18 ProductVarientItems Model 
+class ProductVarientItems(models.Model):
+    id=models.AutoField(primary_key=True)
+    product_varient_id=models.ForeignKey(
+    	ProductVarient,
+    	on_delete=models.CASCADE)
+    product_id=models.ForeignKey(
+    	Products,
+    	on_delete=models.CASCADE)
+    title=models.CharField(max_length=255)
+    created_at=models.DateTimeField(auto_now_add=True)
 
 
 

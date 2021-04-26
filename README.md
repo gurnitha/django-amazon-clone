@@ -191,7 +191,10 @@
         modified:   README.md
         modified:   app/main/models.py
 
+#### 26. Creating ProductVarientItems model and add OneToMany relationship with ProductVarient and Products models
 
+        modified:   README.md
+        modified:   app/main/models.py
 
 
 

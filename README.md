@@ -131,12 +131,15 @@
         modified:   README.md
         modified:   app/main/models.py
 
-
 #### 14. Creating Categories model 
 
         modified:   README.md
         modified:   app/main/models.py
 
+#### 15. Creating SubCategories model and OneToMany relationship with Categories model
+
+        modified:   README.md
+        modified:   app/main/models.py
 
 
 

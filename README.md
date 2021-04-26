@@ -171,7 +171,10 @@
         modified:   README.md
         modified:   app/main/models.py
 
+#### 22. Creating ProductQuestions model and OneToMany relationship with Products and CustomerUser models
 
+        modified:   README.md
+        modified:   app/main/models.py
 
 
 

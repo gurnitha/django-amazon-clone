@@ -169,6 +169,19 @@ class ProductTags(models.Model):
     is_active=models.IntegerField(default=1)
 
 
+#14 ProductQuestions Model 
+class ProductQuestions(models.Model):
+    id=models.AutoField(primary_key=True)
+    product_id=models.ForeignKey(
+    	Products,
+    	on_delete=models.CASCADE)
+    user_id=models.ForeignKey(
+    	CustomerUser,
+    	on_delete=models.CASCADE)
+    question=models.TextField()
+    answer=models.TextField()
+    created_at=models.DateTimeField(auto_now_add=True)
+    is_active=models.IntegerField(default=1)
 
 
 

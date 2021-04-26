@@ -161,6 +161,10 @@
         modified:   README.md
         modified:   app/main/models.py
 
+#### 20. Creating ProductAbout model and OneToMany relationship with Products model
+
+        modified:   README.md
+        modified:   app/main/models.py
 
 
 

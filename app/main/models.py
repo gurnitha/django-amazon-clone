@@ -118,6 +118,21 @@ class ProductMedia(models.Model):
     is_active=models.IntegerField(default=1) 
 
 
+#10 ProductTransaction Model 
+class ProductTransaction(models.Model):
+    id=models.AutoField(primary_key=True)
+    transaction_type_choices=(
+    	(1,"BUY"),
+    	(2,"SELL"))
+    product_id=models.ForeignKey(
+    	roducts,
+    	on_delete=models.CASCADE)
+    transaction_product_count=models.IntegerField(default=1)
+    transaction_type=models.CharField(
+    	choices=transaction_type_choices,
+    	max_length=255)
+    transaction_description=models.CharField(max_length=255)
+    created_at=models.DateTimeField(auto_now_add=True)
 
 
 

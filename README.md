@@ -151,7 +151,10 @@
         modified:   README.md
         modified:   app/main/models.py
 
+#### 18. Creating ProductTransaction model and OneToMany relationship with Products model
 
+        modified:   README.md
+        modified:   app/main/models.py
 
 
 

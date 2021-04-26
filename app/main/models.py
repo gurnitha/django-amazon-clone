@@ -1,6 +1,8 @@
 # app/main/models.py
 from django.db import models
 from django.contrib.auth.models import AbstractUser
+from django.dispatch import receiver
+from django.db.models.signals import post_save
 
 # Create your models here.
 
@@ -258,6 +260,21 @@ class OrderDeliveryStatus(models.Model):
     updated_at=models.DateTimeField(auto_now_add=True)
 
 
+#21 Create User Profile
+@receiver(post_save,sender=CustomUser)
+def create_user_profile(sender,instance,created,**kwargs):
+    if created:
+        if instance.user_type==1:
+            AdminUser.objects.create(auth_user_id=instance)
+        if instance.user_type==2:
+            StaffUser.objects.create(auth_user_id=instance)
+        if instance.user_type==3:
+            MerchantUser.objects.create(
+            	auth_user_id=instance,
+            	company_name="",
+            	gst_details="",address="")
+        if instance.user_type==4:
+            CustomerUser.objects.create(auth_user_id=instance)            
 
 
 

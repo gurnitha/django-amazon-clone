@@ -206,10 +206,15 @@
         modified:   README.md
         modified:   app/main/models.py
 
+#### 29. Creating OrderDeliveryStatus model and add OneToMany relationship with CustomerOrders model
 
+        modified:   README.md
+        modified:   app/main/models.py
 
+#### 30. Creating create_user_profile model
 
-
+        modified:   README.md
+        modified:   app/main/models.py
 
 
 

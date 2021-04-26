@@ -277,6 +277,17 @@ def create_user_profile(sender,instance,created,**kwargs):
             CustomerUser.objects.create(auth_user_id=instance)            
 
 
+#22 Save User Profile
+@receiver(post_save,sender=CustomUser)
+def save_user_profile(sender,instance,**kwargs):
+    if instance.user_type==1:
+        instance.adminuser.save()
+    if instance.user_type==2:
+        instance.staffuser.save()
+    if instance.user_type==3:
+        instance.merchantuser.save()
+    if instance.user_type==4:
+        instance.customeruser.save()
 
 
 

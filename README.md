@@ -19,8 +19,16 @@
         $ python -m pip install django==3.2.*
         modified:   README.md
 
+#### 4. Create Django project 'config' inside src folder
 
-
+        $ django-admin startproject config .
+        modified:   README.md
+        new file:   config/asgi.py
+        new file:   config/settings.py
+        new file:   config/urls.py
+        new file:   config/wsgi.py
+        new file:   db.sqlite3
+        new file:   manage.py
 
 
 

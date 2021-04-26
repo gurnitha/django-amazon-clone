@@ -48,6 +48,13 @@ class MerchantUser(models.Model):
     created_at=models.DateTimeField(auto_now_add=True)
 
 
+#5 CustomerUser Model
+class CustomerUser(models.Model):
+    auth_user_id=models.OneToOneField(
+    	CustomUser,
+    	on_delete=models.CASCADE)
+    profile_pic=models.FileField(default="")
+    created_at=models.DateTimeField(auto_now_add=True)
 
 
 

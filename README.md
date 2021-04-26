@@ -126,6 +126,11 @@
         modified:   README.md
         modified:   app/main/models.py
 
+#### 13. Creating CustomerUser model and OneToOne relationship with CustomUser model
+
+        modified:   README.md
+        modified:   app/main/models.py
+
 
 
 

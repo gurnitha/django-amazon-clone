@@ -146,6 +146,10 @@
         modified:   README.md
         modified:   app/main/models.py
 
+#### 17. Creating ProductMedia model and OneToMany relationship with Products model
+
+        modified:   README.md
+        modified:   app/main/models.py
 
 
 

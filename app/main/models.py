@@ -103,7 +103,19 @@ class Products(models.Model):
     is_active=models.IntegerField(default=1)
 
 
-
+#9 ProductMedia Model
+class ProductMedia(models.Model):
+    id=models.AutoField(primary_key=True)
+    product_id=models.ForeignKey(
+    	Products,
+    	on_delete=models.CASCADE)
+    media_type_choice=(
+    	(1,"Image"),
+    	(2,"Video"))
+    media_type=models.CharField(max_length=255)
+    media_content=models.FileField()
+    created_at=models.DateTimeField(auto_now_add=True)
+    is_active=models.IntegerField(default=1) 
 
 
 

@@ -141,6 +141,10 @@
         modified:   README.md
         modified:   app/main/models.py
 
+#### 16. Creating Products model and OneToMany relationship with SubCategories and MerchantUser models
+
+        modified:   README.md
+        modified:   app/main/models.py
 
 
 

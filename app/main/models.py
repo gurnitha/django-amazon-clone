@@ -135,6 +135,18 @@ class ProductTransaction(models.Model):
     created_at=models.DateTimeField(auto_now_add=True)
 
 
+#11 ProductDetails Model 
+class ProductDetails(models.CharField):
+    id=models.AutoField(primary_key=True)
+    product_id=models.ForeignKey(
+    	Products,
+    	on_delete=models.CASCADE)
+    title=models.CharField(max_length=255)
+    title_details=models.CharField(max_length=255)
+    created_at=models.DateTimeField(auto_now_add=True)
+    is_active=models.IntegerField(default=1)
+
+
 
 
 

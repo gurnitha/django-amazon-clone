@@ -106,7 +106,10 @@
 		> Adding links to sources: Github and Youtube
         modified:   README.md
 
+#### 9. Creating CustomUser model
 
+        modified:   README.md
+        modified:   app/main/models.py
 
 
 

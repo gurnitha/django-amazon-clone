@@ -27,6 +27,13 @@ class AdminUser(models.Model):
     created_at=models.DateTimeField(auto_now_add=True)
 
 
+#3 StaffUser Model
+class StaffUser(models.Model):
+    profile_pic=models.FileField(default="")
+    auth_user_id=models.OneToOneField(
+    	CustomUser,
+    	on_delete=models.CASCADE)
+    created_at=models.DateTimeField(auto_now_add=True)
 
 
 

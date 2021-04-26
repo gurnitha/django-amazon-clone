@@ -116,7 +116,10 @@
         modified:   README.md
         modified:   app/main/models.py
 
+#### 11. Creating StaffUser model and OneToOne relationship with CustomUser model
 
+        modified:   README.md
+        modified:   app/main/models.py
 
 
 

@@ -57,6 +57,17 @@ class CustomerUser(models.Model):
     created_at=models.DateTimeField(auto_now_add=True)
 
 
+#6 Categories Model
+class Categories(models.Model):
+    id=models.AutoField(primary_key=True)
+    title=models.CharField(max_length=255)
+    url_slug=models.CharField(max_length=255)
+    thumbnail=models.FileField()
+    description=models.TextField()
+    created_at=models.DateTimeField(auto_now_add=True)
+    is_active=models.IntegerField(default=1)
+
+
 
 
 

@@ -1,5 +1,10 @@
 ## CLONE AMAZON USING DJANGO
 
+### 0. Links to source on Github and Youtube
+
+	https://github.com/gurnitha/django-amazon-clone
+	https://www.youtube.com/channel/UCyz5M_3Rv2jLUDs4R_yRBkw
+
 #### 1. Initial setup
 
         new file:   .gitignore
@@ -96,9 +101,10 @@
 
         modified:   README.md
 
+#### 8. Modified README.md file 
 
-
-
+		> Adding links to sources: Github and Youtube
+        modified:   README.md
 
 
 

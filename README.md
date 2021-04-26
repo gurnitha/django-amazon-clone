@@ -201,7 +201,10 @@
         modified:   README.md
         modified:   app/main/models.py
 
+#### 28. Creating OrderDeliveryStatus model and add OneToMany relationship with CustomerOrders model
 
+        modified:   README.md
+        modified:   app/main/models.py
 
 
 

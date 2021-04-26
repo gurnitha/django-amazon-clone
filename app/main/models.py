@@ -233,6 +233,17 @@ class ProductVarientItems(models.Model):
     created_at=models.DateTimeField(auto_now_add=True)
 
 
+#19 CustomerOrders Model 
+class CustomerOrders(models.Model):
+    id=models.AutoField(primary_key=True)
+    product_id=models.ForeignKey(
+    	Products,
+    	on_delete=models.DO_NOTHING)
+    purchase_price=models.CharField(max_length=255)
+    coupon_code=models.CharField(max_length=255)
+    discount_amt=models.CharField(max_length=255)
+    product_status=models.CharField(max_length=255)
+    created_at=models.DateTimeField(auto_now_add=True)
 
 
 

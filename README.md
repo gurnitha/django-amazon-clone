@@ -196,6 +196,10 @@
         modified:   README.md
         modified:   app/main/models.py
 
+#### 27. Creating CustomerOrders model and add OneToMany relationship with Products model
+
+        modified:   README.md
+        modified:   app/main/models.py
 
 
 

@@ -186,7 +186,10 @@
         modified:   README.md
         modified:   app/main/models.py
 
+#### 25. Creating ProductVarient model
 
+        modified:   README.md
+        modified:   app/main/models.py
 
 
 

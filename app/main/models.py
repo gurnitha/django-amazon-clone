@@ -213,6 +213,11 @@ class ProductReviewVoting(models.Model):
     is_active=models.IntegerField(default=1)
 
 
+# 17 ProductVarient Model
+class ProductVarient(models.Model):
+    id=models.AutoField(primary_key=True)
+    title=models.CharField(max_length=255)
+    created_at=models.DateTimeField(auto_now_add=True)
 
 
 

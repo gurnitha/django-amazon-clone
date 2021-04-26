@@ -5,6 +5,10 @@
         new file:   .gitignore
         new file:   README.md
 
+#### 2. Create virtual environment
+
+        $ python -m venv venv3932
+        modified:   README.md
 
 
 

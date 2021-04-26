@@ -41,6 +41,11 @@
         new file:   app/main/tests.py
         new file:   app/main/views.py
 
+#### 6. Install django app 'main' to the project
+
+        modified:   README.md
+        modified:   app/main/apps.py
+        modified:   config/settings.py
 
 
 

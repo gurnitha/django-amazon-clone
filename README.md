@@ -30,7 +30,16 @@
         new file:   db.sqlite3
         new file:   manage.py
 
+#### 5. Create Django app 'main' inside app folder
 
+        modified:   README.md
+        new file:   app/main/__init__.py
+        new file:   app/main/admin.py
+        new file:   app/main/apps.py
+        new file:   app/main/migrations/__init__.py
+        new file:   app/main/models.py
+        new file:   app/main/tests.py
+        new file:   app/main/views.py
 
 
 

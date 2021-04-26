@@ -200,7 +200,17 @@ class ProductReviews(models.Model):
     is_active=models.IntegerField(default=1)
 
 
-
+#16 ProductReviewVoting Model 
+class ProductReviewVoting(models.Model):
+    id=models.AutoField(primary_key=True)
+    product_review_id=models.ForeignKey(
+    	ProductReviews,
+    	on_delete=models.CASCADE)
+    user_id_voting=models.ForeignKey(
+    	CustomerUser,
+    	on_delete=models.CASCADE)
+    created_at=models.DateTimeField(auto_now_add=True)
+    is_active=models.IntegerField(default=1)
 
 
 

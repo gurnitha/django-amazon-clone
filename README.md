@@ -181,7 +181,10 @@
         modified:   README.md
         modified:   app/main/models.py
 
+#### 24. Creating ProductReviewVoting model and add OneToMany relationship with ProductReviews and CustomerUser models
 
+        modified:   README.md
+        modified:   app/main/models.py
 
 
 

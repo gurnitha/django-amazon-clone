@@ -166,6 +166,10 @@
         modified:   README.md
         modified:   app/main/models.py
 
+#### 21. Creating ProductTags model and OneToMany relationship with Products model
+
+        modified:   README.md
+        modified:   app/main/models.py
 
 
 

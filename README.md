@@ -47,9 +47,54 @@
         modified:   app/main/apps.py
         modified:   config/settings.py
 
+#### 7. Checking the product structure
 
+		(venv3932)
+		62812@DESKTOP-CMH9JMD MINGW64 /e/2021/DJANGO/WINDOWS/clone-amazon-ytb-supercoders/src (main)
+		$ cmd //c tree //F
+		Folder PATH listing
+		Volume serial number is DC72-8D6C
+		E:.
+		▒   .gitignore
+		▒   db.sqlite3
+		▒   manage.py
+		▒   README.md
+		▒
+		▒▒▒▒app
+		▒   ▒▒▒▒main
+		▒       ▒   admin.py
+		▒       ▒   apps.py
+		▒       ▒   models.py
+		▒       ▒   tests.py
+		▒       ▒   views.py
+		▒       ▒   __init__.py
+		▒       ▒
+		▒       ▒▒▒▒migrations
+		▒       ▒   ▒   __init__.py
+		▒       ▒   ▒
+		▒       ▒   ▒▒▒▒__pycache__
+		▒       ▒           __init__.cpython-39.pyc
+		▒       ▒
+		▒       ▒▒▒▒__pycache__
+		▒               admin.cpython-39.pyc
+		▒               apps.cpython-39.pyc
+		▒               models.cpython-39.pyc
+		▒               __init__.cpython-39.pyc
+		▒
+		▒▒▒▒config
+		    ▒   asgi.py
+		    ▒   settings.py
+		    ▒   urls.py
+		    ▒   wsgi.py
+		    ▒   __init__.py
+		    ▒
+		    ▒▒▒▒__pycache__
+		            settings.cpython-39.pyc
+		            urls.cpython-39.pyc
+		            wsgi.cpython-39.pyc
+		            __init__.cpython-39.pyc
 
-
+        modified:   README.md
 
 
 

@@ -176,6 +176,10 @@
         modified:   README.md
         modified:   app/main/models.py
 
+#### 23. Creating ProductReviews model and add OneToMany relationship with Products and CustomerUser models
+
+        modified:   README.md
+        modified:   app/main/models.py
 
 
 

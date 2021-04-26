@@ -184,6 +184,20 @@ class ProductQuestions(models.Model):
     is_active=models.IntegerField(default=1)
 
 
+#15 ProductReviews Model 
+class ProductReviews(models.Model):
+    id=models.AutoField(primary_key=True)
+    product_id=models.ForeignKey(
+    	Products,
+    	on_delete=models.CASCADE)
+    user_id=models.ForeignKey(
+    	CustomerUser,
+    	on_delete=models.CASCADE)
+    review_image=models.FileField()
+    rating=models.CharField(default="5",max_length=255)
+    review=models.TextField(default="")
+    created_at=models.DateTimeField(auto_now_add=True)
+    is_active=models.IntegerField(default=1)
 
 
 

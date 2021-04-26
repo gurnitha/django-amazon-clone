@@ -111,6 +111,12 @@
         modified:   README.md
         modified:   app/main/models.py
 
+#### 10. Creating AdminUser model and OneToOne relationship with CustomUser model
+
+        modified:   README.md
+        modified:   app/main/models.py
+
+
 
 
 

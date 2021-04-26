@@ -121,6 +121,11 @@
         modified:   README.md
         modified:   app/main/models.py
 
+#### 12. Creating MerchantUser model and OneToOne relationship with CustomUser model
+
+        modified:   README.md
+        modified:   app/main/models.py
+
 
 
 

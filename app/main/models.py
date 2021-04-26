@@ -36,7 +36,16 @@ class StaffUser(models.Model):
     created_at=models.DateTimeField(auto_now_add=True)
 
 
-
+#4 MerchantUser Model
+class MerchantUser(models.Model):
+    auth_user_id=models.OneToOneField(
+    	CustomUser,
+    	on_delete=models.CASCADE)
+    profile_pic=models.FileField(default="")
+    company_name=models.CharField(max_length=255)
+    gst_details=models.CharField(max_length=255)
+    address=models.TextField()
+    created_at=models.DateTimeField(auto_now_add=True)
 
 
 

@@ -1,21 +1,21 @@
 ## CLONE AMAZON USING DJANGO
 
-### 0. Links to source on Github and Youtube
+#### 0. Links to source on Github and Youtube
 
 	https://github.com/gurnitha/django-amazon-clone
 	https://www.youtube.com/channel/UCyz5M_3Rv2jLUDs4R_yRBkw
 
-### 1. Initial setup
+#### 1. Initial setup
 
         new file:   .gitignore
         new file:   README.md
 
-### 2. Create virtual environment
+#### 2. Create virtual environment
 
         $ python -m venv venv3932
         modified:   README.md
 
-### 3. Install Django  
+#### 3. Install Django  
 
         $ source ./venv3932/scripts/activate
         (venv3932)
@@ -24,7 +24,7 @@
         $ python -m pip install django==3.2.*
         modified:   README.md
 
-### 4. Create Django project 'config' inside src folder
+#### 4. Create Django project 'config' inside src folder
 
         $ django-admin startproject config .
         modified:   README.md
@@ -35,7 +35,7 @@
         new file:   db.sqlite3
         new file:   manage.py
 
-### 5. Create Django app 'main' inside app folder
+#### 5. Create Django app 'main' inside app folder
 
         modified:   README.md
         new file:   app/main/__init__.py
@@ -46,13 +46,13 @@
         new file:   app/main/tests.py
         new file:   app/main/views.py
 
-### 6. Install django app 'main' to the project
+#### 6. Install django app 'main' to the project
 
         modified:   README.md
         modified:   app/main/apps.py
         modified:   config/settings.py
 
-### 7. Checking the product structure
+#### 7. Checking the product structure
 
 		(venv3932)
 		62812@DESKTOP-CMH9JMD MINGW64 /e/2021/DJANGO/WINDOWS/clone-amazon-ytb-supercoders/src (main)
@@ -101,141 +101,141 @@
 
         modified:   README.md
 
-### 8. Modified README.md file 
+#### 8. Modified README.md file 
 
 		> Adding links to sources: Github and Youtube
         modified:   README.md
 
-### 9. Creating CustomUser model
+#### 9. Creating CustomUser model
 
         modified:   README.md
         modified:   app/main/models.py
 
-### 10. Creating AdminUser model and add OneToOne relationship with CustomUser model
+#### 10. Creating AdminUser model and add OneToOne relationship with CustomUser model
 
         modified:   README.md
         modified:   app/main/models.py
 
-### 11. Creating StaffUser model and add OneToOne relationship with CustomUser model
+#### 11. Creating StaffUser model and add OneToOne relationship with CustomUser model
 
         modified:   README.md
         modified:   app/main/models.py
 
-### 12. Creating MerchantUser model and add OneToOne relationship with CustomUser model
+#### 12. Creating MerchantUser model and add OneToOne relationship with CustomUser model
 
         modified:   README.md
         modified:   app/main/models.py
 
-### 13. Creating CustomerUser model and add OneToOne relationship with CustomUser model
+#### 13. Creating CustomerUser model and add OneToOne relationship with CustomUser model
 
         modified:   README.md
         modified:   app/main/models.py
 
-### 14. Creating Categories model 
+#### 14. Creating Categories model 
 
         modified:   README.md
         modified:   app/main/models.py
 
-### 15. Creating SubCategories model and add OneToMany relationship with Categories model
+#### 15. Creating SubCategories model and add OneToMany relationship with Categories model
 
         modified:   README.md
         modified:   app/main/models.py
 
-### 16. Creating Products model and add OneToMany relationship with SubCategories and MerchantUser models
+#### 16. Creating Products model and add OneToMany relationship with SubCategories and MerchantUser models
 
         modified:   README.md
         modified:   app/main/models.py
 
-### 17. Creating ProductMedia model and add OneToMany relationship with Products model
+#### 17. Creating ProductMedia model and add OneToMany relationship with Products model
 
         modified:   README.md
         modified:   app/main/models.py
 
-### 18. Creating ProductTransaction model and add OneToMany relationship with Products model
+#### 18. Creating ProductTransaction model and add OneToMany relationship with Products model
 
         modified:   README.md
         modified:   app/main/models.py
 
-### 19. Creating ProductDetails model and add OneToMany relationship with Products model
+#### 19. Creating ProductDetails model and add OneToMany relationship with Products model
 
         modified:   README.md
         modified:   app/main/models.py
 
-### 20. Creating ProductAbout model and add OneToMany relationship with Products model
+#### 20. Creating ProductAbout model and add OneToMany relationship with Products model
 
         modified:   README.md
         modified:   app/main/models.py
 
-### 21. Creating ProductTags model and add OneToMany relationship with Products model
+#### 21. Creating ProductTags model and add OneToMany relationship with Products model
 
         modified:   README.md
         modified:   app/main/models.py
 
-### 22. Creating ProductQuestions model and add OneToMany relationship with Products and CustomerUser models
+#### 22. Creating ProductQuestions model and add OneToMany relationship with Products and CustomerUser models
 
         modified:   README.md
         modified:   app/main/models.py
 
-### 23. Creating ProductReviews model and add OneToMany relationship with Products and CustomerUser models
+#### 23. Creating ProductReviews model and add OneToMany relationship with Products and CustomerUser models
 
         modified:   README.md
         modified:   app/main/models.py
 
-### 24. Creating ProductReviewVoting model and add OneToMany relationship with ProductReviews and CustomerUser models
+#### 24. Creating ProductReviewVoting model and add OneToMany relationship with ProductReviews and CustomerUser models
 
         modified:   README.md
         modified:   app/main/models.py
 
-### 25. Creating ProductVarient model
+#### 25. Creating ProductVarient model
 
         modified:   README.md
         modified:   app/main/models.py
 
-### 26. Creating ProductVarientItems model and add OneToMany relationship with ProductVarient and Products models
+#### 26. Creating ProductVarientItems model and add OneToMany relationship with ProductVarient and Products models
 
         modified:   README.md
         modified:   app/main/models.py
 
-### 27. Creating CustomerOrders model and add OneToMany relationship with Products model
+#### 27. Creating CustomerOrders model and add OneToMany relationship with Products model
 
         modified:   README.md
         modified:   app/main/models.py
 
-### 28. Creating OrderDeliveryStatus model and add OneToMany relationship with CustomerOrders model
+#### 28. Creating OrderDeliveryStatus model and add OneToMany relationship with CustomerOrders model
 
         modified:   README.md
         modified:   app/main/models.py
 
-### 29. Creating OrderDeliveryStatus model and add OneToMany relationship with CustomerOrders model
+#### 29. Creating OrderDeliveryStatus model and add OneToMany relationship with CustomerOrders model
 
         modified:   README.md
         modified:   app/main/models.py
 
-### 30. Creating create_user_profile model
+#### 30. Creating create_user_profile model
 
         modified:   README.md
         modified:   app/main/models.py
 
-### 31. Creating save_user_profile model
+#### 31. Creating save_user_profile model
 
         modified:   README.md
         modified:   app/main/models.py
 
-### 32. Modified README.md file
+#### 32. Modified README.md file
 
         modified:   README.md
 
-### 33. Register Categories and SubCategories models to admin
+#### 33. Register Categories and SubCategories models to admin
 
         modified:   README.md
         modified:   app/main/admin.py
 
-### 34. Correction of a typo in ProductTransaction model
+#### 34. Correction of a typo in ProductTransaction model
 
         modified:   README.md
         modified:   app/main/models.py
 
-### 35. Checking the project
+#### 35. Checking the project
 
         (venv3932) PS E:\2021\DJANGO\WINDOWS\clone-amazon-ytb-supercoders\src> python manage.py check
         SystemCheckError: System check identified some issues:
@@ -251,14 +251,14 @@
         modified:   app/main/__pycache__/models.cpython-39.pyc
         modified:   app/main/models.py
 
-### 36. Fixing the errors
+#### 36. Fixing the errors
 
         > add: AUTH_USER_MODEL to settings.py
         > error fixed
         (venv3932) PS E:\2021\DJANGO\WINDOWS\clone-amazon-ytb-supercoders\src> python manage.py check
         System check identified no issues (0 silenced).
 
-### 37. Create database and superuser
+#### 37. Create database and superuser
 
         > python manage.py makemigrations
         > python manage.py py migrate
@@ -267,8 +267,9 @@
         new file:   app/main/migrations/0001_initial.py
         modified:   db.sqlite3
 
-### 38. Modified README.md
+#### 38. Modified README.md
 
+#### 39. Modified README.md
 
 
 

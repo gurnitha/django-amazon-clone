@@ -225,8 +225,10 @@
 
         modified:   README.md
 
+#### 33. Register Categories and SubCategories models to admin
 
-
+        modified:   README.md
+        modified:   app/main/admin.py
 
 
 

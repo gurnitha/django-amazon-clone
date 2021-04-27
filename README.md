@@ -272,6 +272,12 @@
 #### 39. Modified README.md
 
 
+## TEMPLATING
+
+#### 40. Adding static and media files root and url
+
+        modified:   README.md
+        modified:   config/settings.py
 
 
 

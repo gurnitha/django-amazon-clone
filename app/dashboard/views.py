@@ -7,3 +7,6 @@ def adminHome(request):
 
 def adminLogin(request):
 	return render(request, 'dashboard/login.html')
+
+def adminLoginProcess(request):
+	return render(request, 'dashboard/login_process.html')

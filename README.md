@@ -331,9 +331,13 @@
         new file:   templates/dashboard/shared/navbar.html
         new file:   templates/dashboard/shared/sidebar.html
 
+#### 46.1 Login - Login process with {% csrf_token %} added
 
-
-
+        modified:   README.md
+        modified:   app/dashboard/views.py
+        modified:   config/urls.py
+        modified:   templates/dashboard/login.html
+        new file:   templates/dashboard/login_process.html
 
 
 

@@ -235,8 +235,21 @@
         modified:   README.md
         modified:   app/main/models.py
 
+#### 35. Checking the project
 
+        (venv3932) PS E:\2021\DJANGO\WINDOWS\clone-amazon-ytb-supercoders\src> python manage.py check
+        SystemCheckError: System check identified some issues:
 
+        ERRORS:
+        ...
+        System check identified 4 issues (0 silenced).
+
+        > There are 4 issues found
+        > NEXT: fixing the errors
+        
+        modified:   README.md
+        modified:   app/main/__pycache__/models.cpython-39.pyc
+        modified:   app/main/models.py
 
 
 

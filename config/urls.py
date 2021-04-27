@@ -6,7 +6,8 @@ from django.contrib import admin
 from django.urls import path, include
 
 # app/dashboard
-from app.dashboard.views import admin_login
+from app.dashboard.views import adminHome
+from app.dashboard.views import adminLogin
 
 urlpatterns = [
 	# main's app path
@@ -14,7 +15,8 @@ urlpatterns = [
 
 	# dashboard's app paths
     # path('admin/', admin.site.urls),
-    path('admin/', admin_login, name='login'),
+    path('admin/home', adminHome, name='home'),
+    path('admin/login', adminLogin, name='login'),
 ]
 
 urlpatterns += static(settings.STATIC_URL,document_root=settings.STATIC_ROOT)

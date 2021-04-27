@@ -320,9 +320,16 @@
         new file:   static/assets/img/vaficon.ico
         modified:   templates/dashboard/login.html
 
+#### 45. Adding Admin home page
 
-
-
+        modified:   README.md
+        modified:   app/dashboard/views.py
+        modified:   config/urls.py
+        modified:   static/assets/img/LOGO.JPG
+        new file:   templates/dashboard/base.html
+        new file:   templates/dashboard/home.html
+        new file:   templates/dashboard/shared/navbar.html
+        new file:   templates/dashboard/shared/sidebar.html
 
 
 

@@ -2,5 +2,8 @@
 from django.shortcuts import render
 
 # Create your views here.
-def admin_login(request):
+def adminHome(request):
+	return render(request, 'dashboard/home.html')
+
+def adminLogin(request):
 	return render(request, 'dashboard/login.html')

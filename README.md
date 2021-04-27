@@ -291,7 +291,18 @@
         new file:   templates/main/about.html
         new file:   templates/main/index.html
 
+#### 42. Create 'dashboard' app and install it to root project and move templates to project root
 
+        modified:   README.md
+        new file:   app/dashboard/__init__.py
+        new file:   app/dashboard/admin.py
+        new file:   app/dashboard/apps.py
+        new file:   app/dashboard/models.py
+        new file:   app/dashboard/tests.py
+        new file:   app/dashboard/views.py
+        modified:   config/settings.py
+        modified:   config/urls.py
+        modified:   templates/main/index.html
 
 
 

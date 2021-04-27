@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
     # First party apps 
     'app.main.apps.MainConfig',
+    'app.dashboard.apps.DashboardConfig',
 ]
 
 MIDDLEWARE = [
@@ -132,7 +133,10 @@ AUTH_USER_MODEL="main.CustomUser"
 
 """Static files (CSS, JavaScript, Images)"""
 STATIC_URL='/static/'
-STATIC_ROOT=os.path.join(BASE_DIR, 'static')
+STATIC_ROOT=os.path.join(BASE_DIR, '/')
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, "static"),
+)
 
 """Media files"""
 MEDIA_URL='/media/'

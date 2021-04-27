@@ -246,13 +246,17 @@
 
         > There are 4 issues found
         > NEXT: fixing the errors
-        
+
         modified:   README.md
         modified:   app/main/__pycache__/models.cpython-39.pyc
         modified:   app/main/models.py
 
+#### 36. Fixing the errors
 
-
+        > add: AUTH_USER_MODEL to settings.py
+        > error fixed
+        (venv3932) PS E:\2021\DJANGO\WINDOWS\clone-amazon-ytb-supercoders\src> python manage.py check
+        System check identified no issues (0 silenced).
 
 
 

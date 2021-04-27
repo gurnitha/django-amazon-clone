@@ -339,7 +339,15 @@
         modified:   templates/dashboard/login.html
         new file:   templates/dashboard/login_process.html
 
+#### 46.2 Login - Authenticate user login
 
+        modified:   README.md
+        modified:   app/dashboard/views.py
+        modified:   config/urls.py
+        modified:   db.sqlite3
+        modified:   templates/dashboard/login.html
+        modified:   templates/main/about.html
+        modified:   templates/main/index.html
 
 
 

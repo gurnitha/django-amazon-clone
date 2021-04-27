@@ -111,22 +111,22 @@
         modified:   README.md
         modified:   app/main/models.py
 
-#### 10. Creating AdminUser model and OneToOne relationship with CustomUser model
+#### 10. Creating AdminUser model and add OneToOne relationship with CustomUser model
 
         modified:   README.md
         modified:   app/main/models.py
 
-#### 11. Creating StaffUser model and OneToOne relationship with CustomUser model
+#### 11. Creating StaffUser model and add OneToOne relationship with CustomUser model
 
         modified:   README.md
         modified:   app/main/models.py
 
-#### 12. Creating MerchantUser model and OneToOne relationship with CustomUser model
+#### 12. Creating MerchantUser model and add OneToOne relationship with CustomUser model
 
         modified:   README.md
         modified:   app/main/models.py
 
-#### 13. Creating CustomerUser model and OneToOne relationship with CustomUser model
+#### 13. Creating CustomerUser model and add OneToOne relationship with CustomUser model
 
         modified:   README.md
         modified:   app/main/models.py
@@ -136,42 +136,42 @@
         modified:   README.md
         modified:   app/main/models.py
 
-#### 15. Creating SubCategories model and OneToMany relationship with Categories model
+#### 15. Creating SubCategories model and add OneToMany relationship with Categories model
 
         modified:   README.md
         modified:   app/main/models.py
 
-#### 16. Creating Products model and OneToMany relationship with SubCategories and MerchantUser models
+#### 16. Creating Products model and add OneToMany relationship with SubCategories and MerchantUser models
 
         modified:   README.md
         modified:   app/main/models.py
 
-#### 17. Creating ProductMedia model and OneToMany relationship with Products model
+#### 17. Creating ProductMedia model and add OneToMany relationship with Products model
 
         modified:   README.md
         modified:   app/main/models.py
 
-#### 18. Creating ProductTransaction model and OneToMany relationship with Products model
+#### 18. Creating ProductTransaction model and add OneToMany relationship with Products model
 
         modified:   README.md
         modified:   app/main/models.py
 
-#### 19. Creating ProductDetails model and OneToMany relationship with Products model
+#### 19. Creating ProductDetails model and add OneToMany relationship with Products model
 
         modified:   README.md
         modified:   app/main/models.py
 
-#### 20. Creating ProductAbout model and OneToMany relationship with Products model
+#### 20. Creating ProductAbout model and add OneToMany relationship with Products model
 
         modified:   README.md
         modified:   app/main/models.py
 
-#### 21. Creating ProductTags model and OneToMany relationship with Products model
+#### 21. Creating ProductTags model and add OneToMany relationship with Products model
 
         modified:   README.md
         modified:   app/main/models.py
 
-#### 22. Creating ProductQuestions model and OneToMany relationship with Products and CustomerUser models
+#### 22. Creating ProductQuestions model and add OneToMany relationship with Products and CustomerUser models
 
         modified:   README.md
         modified:   app/main/models.py
@@ -221,8 +221,9 @@
         modified:   README.md
         modified:   app/main/models.py
 
+#### 32. Modified README.md file
 
-
+        modified:   README.md
 
 
 

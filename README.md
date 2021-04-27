@@ -313,9 +313,12 @@
         modified:   templates/main/about.html
         modified:   templates/main/index.html
 
+#### 44. Modified login page
 
-
-
+        modified:   README.md
+        new file:   static/assets/img/LOGO.JPG
+        new file:   static/assets/img/vaficon.ico
+        modified:   templates/dashboard/login.html
 
 
 

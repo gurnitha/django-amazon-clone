@@ -5,24 +5,18 @@ from django.conf import settings
 from django.contrib import admin
 from django.urls import path, include
 
+# app/dashboard
+from app.dashboard.views import admin_login
+
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', include('app.main.urls')),
+	# main's app path
+	path('', include('app.main.urls')),
+
+	# dashboard's app paths
+    # path('admin/', admin.site.urls),
+    path('admin/', admin_login, name='login'),
 ]
 
 urlpatterns += static(settings.STATIC_URL,document_root=settings.STATIC_ROOT)
 urlpatterns += static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
-
-
-# # Import from app/ecommerce
-# from app.ecommerce import views
-# from app.ecommerce import admin_views
-
-# urlpatterns = [
-#     # path('admin/', admin.site.urls),
-#     path('admin/', views.admin_login),
-
-#     # PAGE FOR ADMIN
-#     path('admin_home/',admin_views.admin_home)
-# ]
 

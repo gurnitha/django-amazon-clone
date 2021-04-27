@@ -304,8 +304,14 @@
         modified:   config/urls.py
         modified:   templates/main/index.html
 
+#### 43. Adding login page
 
-
+        modified:   README.md
+        modified:   app/dashboard/views.py
+        modified:   config/urls.py
+        new file:   templates/dashboard/login.html
+        modified:   templates/main/about.html
+        modified:   templates/main/index.html
 
 
 

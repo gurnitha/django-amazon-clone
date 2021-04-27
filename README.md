@@ -258,8 +258,14 @@
         (venv3932) PS E:\2021\DJANGO\WINDOWS\clone-amazon-ytb-supercoders\src> python manage.py check
         System check identified no issues (0 silenced).
 
+#### 37. Create database and superuser
 
-
+        > python manage.py makemigrations
+        > python manage.py py migrate
+        > python manage.py createsuperuser
+        modified:   README.md
+        new file:   app/main/migrations/0001_initial.py
+        modified:   db.sqlite3
 
 
 

@@ -230,6 +230,11 @@
         modified:   README.md
         modified:   app/main/admin.py
 
+#### 34. Correction of a typo in ProductTransaction model
+
+        modified:   README.md
+        modified:   app/main/models.py
+
 
 
 

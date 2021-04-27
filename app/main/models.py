@@ -127,7 +127,7 @@ class ProductTransaction(models.Model):
     	(1,"BUY"),
     	(2,"SELL"))
     product_id=models.ForeignKey(
-    	roducts,
+    	Products,
     	on_delete=models.CASCADE)
     transaction_product_count=models.IntegerField(default=1)
     transaction_type=models.CharField(

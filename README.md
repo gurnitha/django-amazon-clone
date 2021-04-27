@@ -279,7 +279,17 @@
         modified:   README.md
         modified:   config/settings.py
 
+#### 41. Using Urls, Views, Templates to render Home and About pages
 
+        modified:   README.md
+        new file:   app/main/urls.py
+        modified:   app/main/views.py
+        modified:   config/settings.py
+        modified:   config/urls.py
+        ...
+        new file:   static/assets/...
+        new file:   templates/main/about.html
+        new file:   templates/main/index.html
 
 
 

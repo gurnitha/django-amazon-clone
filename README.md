@@ -370,9 +370,13 @@
         modified:   templates/dashboard/shared/navbar.html
         modified:   templates/dashboard/shared/sidebar.html
 
+## LIMITING ACCESS TO ADMIN HOMEPAGE/DASHBOARD
 
+#### 48. Limiting the access to admin dashboard, only logged in user can access it
 
-
+        modified:   README.md
+        modified:   app/dashboard/views.py
+        modified:   db.sqlite3
 
 
 

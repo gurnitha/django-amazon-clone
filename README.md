@@ -398,9 +398,15 @@
         new file:   static/assets/img/vaficon-new.ico
         modified:   templates/dashboard/login.html
 
+## 9. ADMIN PAGES
 
+#### 9.1.49 Create Category List Page
 
-
+        modified:   README.md
+        modified:   app/dashboard/views.py
+        modified:   config/urls.py
+        new file:   templates/dashboard/category_list.html
+        modified:   templates/dashboard/home.html
 
 
 

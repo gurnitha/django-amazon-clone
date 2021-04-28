@@ -1,9 +1,9 @@
-<!-- ecommerce/templates/dashboard/home.html -->
+<!-- ecommerce/templates/dashboard/category_list.html -->
 {% extends './base.html' %}
 
 <!-- Block for title -->
 {% block title %}  
-	Admin Home
+	Admin Category List
 {% endblock title %}
 <!-- End Block for title -->
 
@@ -15,13 +15,15 @@
 
 <!-- Block for page title -->
 {% block page_title %}
-	Dashboard
+	Category List
 {% endblock page_title %}
 <!-- End Block for page title -->
 
 <!-- Block for page main content -->
 {% block page_content %}
-	<p>Simple Dashboard Empty Page</p>
+	{% for category in categories_list %}
+		<p>{{category.title}}</p>
+	{% endfor %}
 {% endblock page_content %}
 <!-- End Block for page main content -->
 

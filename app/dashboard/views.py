@@ -6,18 +6,36 @@ from django.http import HttpResponseRedirect
 from django.urls import reverse
 '''import login_required module to add conditionl to user login'''
 from django.contrib.auth.decorators import login_required
+from django.views.generic import (
+    ListView,
+    CreateView,
+    UpdateView,
+    DetailView)
+
+
+# Import models
+from app.main.models import Categories
 
 # Create your views here.
 
-
-'''Only loggeg in user can access the admin dashboard'''
+# Limiting access to Admin Dashboard,
+# only loggeg in user can access the admin dashboard
 @login_required(login_url='/admin/')
 def adminHome(request):
 	return render(request, 'dashboard/home.html')
 
+# cagegoryListView
+class categoryListView(ListView):
+	model=Categories
+	template_name='dashboard/category_list.html'
+
+
+# adminLogin
 def adminLogin(request):
 	return render(request, 'dashboard/login.html')
 
+
+# adminLoginProcess
 def adminLoginProcess(request):
 	# Get input from the login form
 	username=request.POST.get('username')
@@ -39,6 +57,8 @@ def adminLoginProcess(request):
 			request, 'Login error! Invalid login detail!')
 		return HttpResponseRedirect(reverse('admin_login'))
 
+
+#adminLogoutProcess
 def adminLogoutProcess(request):
 	logout(request)
 	messages.success(request, 'Logged out successfully!')

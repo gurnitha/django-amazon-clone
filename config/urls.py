@@ -1,5 +1,6 @@
 # config/urls.py
 
+# Impor django modules
 from django.conf.urls.static import static
 from django.conf import settings
 from django.contrib import admin
@@ -10,7 +11,8 @@ from app.dashboard.views import (
     adminHome,
     adminLogin,
     adminLoginProcess,
-    adminLogoutProcess)
+    adminLogoutProcess,
+    categoryListView)
 
 urlpatterns = [
 	# MAIN'S APP PATHS
@@ -21,12 +23,19 @@ urlpatterns = [
     path('admin/home', 
     	adminHome, 
     	name='admin_home'),
+
+    path('admin/category/list',
+        categoryListView.as_view(),
+        name='category_list'),
+
     path('admin/', 
     	adminLogin, 
     	name='admin_login'),
+
     path('admin/login_process', 
         adminLoginProcess, 
         name='admin_login_process'),
+
     path('admin/logout_process', 
         adminLogoutProcess, 
         name='admin_logout_process'),

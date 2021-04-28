@@ -14,7 +14,7 @@ from django.views.generic import (
 
 
 # Import models
-from app.main.models import Categories
+from app.dashboard.models import Categories
 
 # Create your views here.
 

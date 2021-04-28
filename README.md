@@ -408,7 +408,18 @@
         new file:   templates/dashboard/category_list.html
         modified:   templates/dashboard/home.html
 
+#### 9.1.50 Moving content of main/models.py to dashboard/models.py
 
+        modified:   README.md
+        modified:   app/dashboard/admin.py
+        renamed:    app/main/migrations/0001_initial.py -> app/dashboard/migrations/0001_initial.py
+        modified:   app/dashboard/models.py
+        modified:   app/dashboard/views.py
+        modified:   app/main/admin.py
+        modified:   app/main/models.py
+        modified:   config/settings.py
+        modified:   db.sqlite3
+        new file:   mdeia/Acer_C27.jpg
 
 
 

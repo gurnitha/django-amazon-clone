@@ -129,7 +129,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # FROM THIS LINE DOWNWARD ARE NEW
 
 """Registering AUTH_USER_MODEL"""
-AUTH_USER_MODEL="main.CustomUser"
+AUTH_USER_MODEL="dashboard.CustomUser"
 
 """Static files (CSS, JavaScript, Images)"""
 STATIC_URL='/static/'

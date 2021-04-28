@@ -350,7 +350,11 @@
         modified:   templates/main/index.html
 
 
+#### 46.3 Login - Displaying logged in username on navabar
 
+        modified:   README.md
+        modified:   db.sqlite3
+        modified:   templates/dashboard/shared/navbar.html 
 
 
 

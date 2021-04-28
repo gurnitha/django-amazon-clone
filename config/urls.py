@@ -6,9 +6,11 @@ from django.contrib import admin
 from django.urls import path, include
 
 # app/dashboard
-from app.dashboard.views import adminHome
-from app.dashboard.views import adminLogin
-from app.dashboard.views import adminLoginProcess
+from app.dashboard.views import (
+    adminHome,
+    adminLogin,
+    adminLoginProcess,
+    adminLogoutProcess)
 
 urlpatterns = [
 	# MAIN'S APP PATHS
@@ -23,8 +25,11 @@ urlpatterns = [
     	adminLogin, 
     	name='admin_login'),
     path('admin/login_process', 
-    	adminLoginProcess, 
-    	name='admin_login_process'),
+        adminLoginProcess, 
+        name='admin_login_process'),
+    path('admin/logout_process', 
+        adminLogoutProcess, 
+        name='admin_logout_process'),
 ]
 
 urlpatterns += static(

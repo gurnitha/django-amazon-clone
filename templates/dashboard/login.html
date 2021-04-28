@@ -78,12 +78,19 @@
                     </div>
                   </div>
 
-                  <!-- Error messages for loggeg in -->
+                  <!-- Conditional for user login and logout -->
                   {% if messages %}
                     <div class="form-group">
                       {% for message in messages %}
+                        <!-- Error messages if logg in failed-->
                         {% if message.tags == 'error' %}
                           <div class="alert alert-danger">
+                            {{message}}
+                          </div>
+                        {% endif %}
+                        <!-- Success messages if loggeg out success -->
+                        {% if message.tags == 'success' %}
+                          <div class="alert alert-success">
                             {{message}}
                           </div>
                         {% endif %}

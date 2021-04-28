@@ -304,6 +304,8 @@
         modified:   config/urls.py
         modified:   templates/main/index.html
 
+## LOGIN
+
 #### 43. Adding login page
 
         modified:   README.md
@@ -356,7 +358,17 @@
         modified:   db.sqlite3
         modified:   templates/dashboard/shared/navbar.html 
 
+## LOGOUT
 
+#### 47. Logout - Create logout method and add success message 
+
+        modified:   README.md
+        modified:   app/dashboard/views.py
+        modified:   config/urls.py
+        modified:   db.sqlite3
+        modified:   templates/dashboard/login.html
+        modified:   templates/dashboard/shared/navbar.html
+        modified:   templates/dashboard/shared/sidebar.html
 
 
 

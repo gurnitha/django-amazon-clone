@@ -461,8 +461,11 @@
         modified:   templates/dashboard/base.html
 
 
+#### 9.1.53 Show Error Message
 
-
+        modified:   README.md
+        modified:   templates/dashboard/base.html
+        modified:   templates/dashboard/category_create.html
 
 
 

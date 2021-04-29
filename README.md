@@ -454,9 +454,11 @@
         new file:   mdeia/bmw.jpg
         modified:   templates/dashboard/category_list.html
 
+#### 9.1.52 Show Success and Error Message
 
-
-
+        modified:   README.md
+        modified:   app/dashboard/views.py
+        modified:   templates/dashboard/base.html
 
 
 

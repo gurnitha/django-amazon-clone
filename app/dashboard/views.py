@@ -4,6 +4,7 @@ from django.contrib.auth import authenticate, login, logout
 from django.contrib import messages
 from django.http import HttpResponseRedirect
 from django.urls import reverse
+from django.contrib.messages.views import SuccessMessageMixin
 
 '''import login_required module to add conditionl to user login'''
 from django.contrib.auth.decorators import login_required
@@ -34,8 +35,9 @@ class categoryListView(ListView):
 
 
 # categoryCreateView
-class categoryCreateView(CreateView):
+class categoryCreateView(SuccessMessageMixin, CreateView):
 	model=Categories
+	success_message="Category added!"
 	fields="__all__"
 	template_name='dashboard/category_create.html'
 

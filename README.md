@@ -422,7 +422,17 @@
         new file:   mdeia/Acer_C27.jpg
 
 
+#### 9.1.51 Create 'Create Category form' page and re-run migrations
 
+        modified:   README.md
+        modified:   app/dashboard/migrations/0001_initial.py
+        modified:   app/dashboard/views.py
+        modified:   config/urls.py
+        modified:   db.sqlite3
+        new file:   mdeia/Acer_C27-2.jpeg
+        new file:   mdeia/Acer_C27_V4fZ7e9.jpg
+        new file:   templates/dashboard/category_create.html
+        modified:   templates/dashboard/category_list.html
 
 
 

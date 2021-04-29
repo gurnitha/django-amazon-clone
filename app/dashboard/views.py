@@ -14,7 +14,9 @@ from django.views.generic import (
 
 
 # Import models
-from app.dashboard.models import Categories
+from app.dashboard.models import (
+	Categories,)
+
 
 # Create your views here.
 
@@ -28,6 +30,12 @@ def adminHome(request):
 class categoryListView(ListView):
 	model=Categories
 	template_name='dashboard/category_list.html'
+
+# cagegoryListView
+class categoryCreateView(CreateView):
+	model=Categories
+	fields="__all__"
+	template_name='dashboard/category_create.html'
 
 
 # adminLogin

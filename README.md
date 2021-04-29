@@ -494,8 +494,11 @@
         from    :MEDIA_ROOT=os.path.join(BASE_DIR, 'mdeia')
         to      :MEDIA_ROOT=os.path.join(BASE_DIR, 'media')
 
+#### 9.6.2.58 Customize Category List Page (Add Active switcher button with conditional 'if has category')
 
-
+        modified:   README.md
+        modified:   db.sqlite3
+        modified:   templates/dashboard/category_list.html
 
 
 

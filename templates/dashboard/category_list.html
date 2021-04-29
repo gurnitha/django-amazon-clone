@@ -39,7 +39,22 @@ ecommerce/templates/dashboard/category_create.html -->
             </div>
 
             <div class="article-cta">
-              <a href="#" class="btn btn-warning">Edit</a>
+            	<label class="custom-switch mt-2" style="float:left;">
+                    <input 
+                    	type="checkbox" 
+                    	name="custom-switch-checkbox" 
+                    	class="custom-switch-input" 
+                    	{% if category.is_active == 1 %}
+                        	checked
+                    	{% endif %}>
+                    <span class="custom-switch-indicator"></span>
+                    <span class="custom-switch-description">
+                    	<font style="vertical-align: inherit;">
+                    		<font style="vertical-align: inherit;">Active</font>
+                    	</font>
+                    </span>
+                </label>
+            	<a href="#" class="btn btn-warning">Edit</a>
             </div>
           </div>
         </article>

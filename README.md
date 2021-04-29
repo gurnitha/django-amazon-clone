@@ -408,7 +408,7 @@
         new file:   templates/dashboard/category_list.html
         modified:   templates/dashboard/home.html
 
-#### 9.1.50 Moving content of main/models.py to dashboard/models.py
+#### 9.2.50 Moving content of main/models.py to dashboard/models.py
 
         modified:   README.md
         modified:   app/dashboard/admin.py
@@ -422,7 +422,7 @@
         new file:   mdeia/Acer_C27.jpg
 
 
-#### 9.1.51.1 Create 'Create Category form' page and re-run migrations
+#### 9.3.1.51 Create 'Create Category form' page and re-run migrations
 
         modified:   README.md
         modified:   app/dashboard/migrations/0001_initial.py
@@ -434,7 +434,7 @@
         new file:   templates/dashboard/category_create.html
         modified:   templates/dashboard/category_list.html
 
-#### 9.1.51.2 Customizing Create Category Form page
+#### 9.3.1.52 Customizing Create Category Form page
 
         modified:   README.md
         modified:   config/urls.py
@@ -445,7 +445,7 @@
         note: No URL to redirect to.  Either provide a url or define a get_absolute_url method on the Model
         NEX> get_absolute_url
 
-#### 9.1.51.3 Add Get Absolute url in Models
+#### 9.3.3.53 Add Get Absolute url in Models
 
         modified:   README.md
         modified:   app/dashboard/models.py
@@ -454,20 +454,20 @@
         new file:   mdeia/bmw.jpg
         modified:   templates/dashboard/category_list.html
 
-#### 9.1.52 Show Success and Error Message
+#### 9.4.1.54 Show Success Message
 
         modified:   README.md
         modified:   app/dashboard/views.py
         modified:   templates/dashboard/base.html
 
 
-#### 9.1.53 Show Error Message
+#### 9.4.2.55 Show Error Message
 
         modified:   README.md
         modified:   templates/dashboard/base.html
         modified:   templates/dashboard/category_create.html
 
-
+#### 9.5.56 Modified README.md file  
 
 
 

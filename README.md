@@ -434,7 +434,7 @@
         new file:   templates/dashboard/category_create.html
         modified:   templates/dashboard/category_list.html
 
-#### 9.1.51.2 Customize Create Category Form page
+#### 9.1.51.2 Customizing Create Category Form page
 
         modified:   README.md
         modified:   config/urls.py
@@ -442,6 +442,8 @@
         new file:   mdeia/electonic.png
         modified:   templates/dashboard/base.html
         modified:   templates/dashboard/category_create.html
+        note: No URL to redirect to.  Either provide a url or define a get_absolute_url method on the Model
+
 
 
 

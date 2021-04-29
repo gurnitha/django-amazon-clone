@@ -42,6 +42,14 @@ class categoryCreateView(SuccessMessageMixin, CreateView):
 	template_name='dashboard/category_create.html'
 
 
+# categoryUpdateView
+class categoryUpdateView(SuccessMessageMixin, UpdateView):
+	model=Categories
+	success_message="Category updated!"
+	fields="__all__"
+	template_name='dashboard/category_create.html'
+
+
 # adminLogin
 def adminLogin(request):
 	return render(request, 'dashboard/login.html')

@@ -13,7 +13,8 @@ from app.dashboard.views import (
     adminLoginProcess,
     adminLogoutProcess,
     categoryListView,
-    categoryCreateView)
+    categoryCreateView,
+    categoryUpdateView)
 
 urlpatterns = [
 	# MAIN'S APP PATHS
@@ -23,26 +24,37 @@ urlpatterns = [
 
     # path('admin/', admin.site.urls),
     
+    # Admin home
     path('admin/home', 
     	adminHome, 
     	name='admin_home'),
 
+    # Category list
     path('admin/category/list',
         categoryListView.as_view(),
         name='category_list'),
 
+    # Category create
     path('admin/category/create',
         categoryCreateView.as_view(),
         name='category_create'),
 
+    # Category update
+    path('admin/category/update/<slug:pk>',
+        categoryUpdateView.as_view(),
+        name='category_update'),
+
+    # Admin login
     path('admin/', 
     	adminLogin, 
     	name='admin_login'),
 
+    # Admin login process
     path('admin/login_process', 
         adminLoginProcess, 
         name='admin_login_process'),
 
+    # Admin logout process
     path('admin/logout_process', 
         adminLogoutProcess, 
         name='admin_logout_process'),

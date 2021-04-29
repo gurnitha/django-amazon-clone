@@ -501,10 +501,12 @@
         modified:   templates/dashboard/category_list.html
 
 
+#### 9.7.1.59 (Part 1) Create Category Edit page
 
-
-
-
+        modified:   README.md
+        modified:   app/dashboard/views.py
+        modified:   config/urls.py
+        modified:   templates/dashboard/category_list.html
 
 
 

@@ -470,6 +470,29 @@
 #### 9.5.56 Modified README.md file  
 
 
+#### 9.6.1.57 Customize Category List Page
+
+        modified:   README.md
+        modified:   config/settings.py
+        modified:   db.sqlite3
+        renamed:    mdeia/Acer_C27-1.jpeg -> media/Acer_C27-1.jpeg
+        renamed:    mdeia/Acer_C27-1_HTfkM6X.jpeg -> media/Acer_C27-1_HTfkM6X.jpeg
+        renamed:    mdeia/Acer_C27-1_KlkHg3f.jpeg -> media/Acer_C27-1_KlkHg3f.jpeg
+        renamed:    mdeia/Acer_C27-1_LNL7ZQq.jpeg -> media/Acer_C27-1_LNL7ZQq.jpeg
+        renamed:    mdeia/Acer_C27-1_cz65U4y.jpeg -> media/Acer_C27-1_cz65U4y.jpeg
+        renamed:    mdeia/Acer_C27-1_qoAIXd0.jpeg -> media/Acer_C27-1_qoAIXd0.jpeg
+        renamed:    mdeia/Acer_C27-1_vHo3QA0.jpeg -> media/Acer_C27-1_vHo3QA0.jpeg
+        renamed:    mdeia/Acer_C27-2.jpeg -> media/Acer_C27-2.jpeg
+        renamed:    mdeia/Acer_C27-3.jpeg -> media/Acer_C27-3.jpeg
+        renamed:    mdeia/Acer_C27.jpg -> media/Acer_C27.jpg
+        renamed:    mdeia/Acer_C27_V4fZ7e9.jpg -> media/Acer_C27_V4fZ7e9.jpg
+        renamed:    mdeia/bmw.jpg -> media/bmw.jpg
+        renamed:    mdeia/electonic.png -> media/electonic.png
+        modified:   templates/dashboard/category_list.html
+
+        > Note: there was typo in setting.py, then it was changed:
+        from    :MEDIA_ROOT=os.path.join(BASE_DIR, 'mdeia')
+        to      :MEDIA_ROOT=os.path.join(BASE_DIR, 'media')
 
 
 

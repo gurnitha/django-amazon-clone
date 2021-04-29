@@ -1,4 +1,4 @@
-<!-- ecommerce/templates/dashboard/category_create.html -->
+ecommerce/templates/dashboard/category_create.html -->
 {% extends './base.html' %}
 
 <!-- Block for title -->
@@ -21,9 +21,32 @@
 
 <!-- Block for page main content -->
 {% block page_content %}
-	{% for category in categories_list %}
-		<p>{{category.title}}</p>
-	{% endfor %}
+<div class="row">
+{% for category in categories_list %}
+	<div class="col-12 col-sm-6 col-md-6 col-lg-3">
+        <article class="article article-style-b">
+          <div class="article-header">
+            <div class="article-image" data-background="/media/{{ category.thumbnail }}" style="background-image: url(&quot;assets/img/news/img13.jpg&quot;);">
+            </div>
+            <div class="article-badge">
+              <div class="article-badge-item bg-danger"><i class="fas fa-fire"></i>{{ category.title }}</div>
+            </div>
+          </div>
+          <div class="article-details">
+            <div class="article-title">
+	            <p>{{ category.description }}</p>
+	            <p>Url slug: {{ category.url_slug }}</p>              
+            </div>
+
+            <div class="article-cta">
+              <a href="#" class="btn btn-warning">Edit</a>
+            </div>
+          </div>
+        </article>
+    </div>
+	<!-- <p>{{category.title}}</p> -->
+{% endfor %}
+</div>
 {% endblock page_content %}
 <!-- End Block for page main content -->
 
@@ -31,4 +54,4 @@
 {% block custom_js %}
 
 {% endblock custom_js %}
-<!-- End Block for custom js -->
+<!-- End Block for custom js

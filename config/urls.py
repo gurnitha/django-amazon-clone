@@ -21,7 +21,7 @@ urlpatterns = [
 
 	# DASHBOARD'S APP PATHS 
 
-    # path('admin/', admin.site.urls),
+    path('admin/', admin.site.urls),
     
     path('admin/home', 
     	adminHome, 

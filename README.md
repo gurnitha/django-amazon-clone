@@ -422,7 +422,7 @@
         new file:   mdeia/Acer_C27.jpg
 
 
-#### 9.1.51 Create 'Create Category form' page and re-run migrations
+#### 9.1.51.1 Create 'Create Category form' page and re-run migrations
 
         modified:   README.md
         modified:   app/dashboard/migrations/0001_initial.py
@@ -434,9 +434,14 @@
         new file:   templates/dashboard/category_create.html
         modified:   templates/dashboard/category_list.html
 
+#### 9.1.51.2 Customize Create Category Form page
 
-
-
+        modified:   README.md
+        modified:   config/urls.py
+        modified:   db.sqlite3
+        new file:   mdeia/electonic.png
+        modified:   templates/dashboard/base.html
+        modified:   templates/dashboard/category_create.html
 
 
 

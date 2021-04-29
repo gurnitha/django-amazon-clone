@@ -443,9 +443,16 @@
         modified:   templates/dashboard/base.html
         modified:   templates/dashboard/category_create.html
         note: No URL to redirect to.  Either provide a url or define a get_absolute_url method on the Model
+        NEX> get_absolute_url
 
+#### 9.1.51.3 Add Get Absolute url in Models
 
-
+        modified:   README.md
+        modified:   app/dashboard/models.py
+        modified:   config/urls.py
+        modified:   db.sqlite3
+        new file:   mdeia/bmw.jpg
+        modified:   templates/dashboard/category_list.html
 
 
 

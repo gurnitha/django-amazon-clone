@@ -30,20 +30,40 @@
 
 <body>
   <div id="app">
+    <!-- Main wrapper -->
     <div class="main-wrapper main-wrapper-1">
+
+      <!-- Navbar -->
       {% include './shared/navbar.html' %}
       {% include './shared/sidebar.html' %}
    
 
       <!-- Main Content -->
       <div class="main-content">
+        <!-- Section -->
         <section class="section">
+          
+          <!-- Header -->
           <div class="section-header">
-            <h1>{% block page_title %}{% endblock page_title %}</h1>
+            <h1>
+              {% block page_title %}
+              {% endblock page_title %}
+            </h1>
           </div>
+
+
+        </section>
+        <!-- End Section -->
+
+        <!-- Content -->
         {% block page_content %}
         {% endblock page_content %}
+        <!-- End Content -->
+        
       </div>
+      <!-- End Main Content -->
+      
+      <!-- Footer -->
       <footer class="main-footer">
         <div class="footer-left">
           Copyright &copy; 2021 <div class="bullet"></div>  SuperCodersStore 
@@ -52,7 +72,9 @@
           
         </div>
       </footer>
+      <!-- End Footer -->
     </div>
+    <!-- End Main wrapper -->
   </div>
 
   <!-- General JS Scripts -->

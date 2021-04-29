@@ -4,6 +4,7 @@ from django.contrib.auth import authenticate, login, logout
 from django.contrib import messages
 from django.http import HttpResponseRedirect
 from django.urls import reverse
+
 '''import login_required module to add conditionl to user login'''
 from django.contrib.auth.decorators import login_required
 from django.views.generic import (
@@ -11,7 +12,6 @@ from django.views.generic import (
     CreateView,
     UpdateView,
     DetailView)
-
 
 # Import models
 from app.dashboard.models import (
@@ -26,12 +26,14 @@ from app.dashboard.models import (
 def adminHome(request):
 	return render(request, 'dashboard/home.html')
 
-# cagegoryListView
+
+# categoryListView
 class categoryListView(ListView):
 	model=Categories
 	template_name='dashboard/category_list.html'
 
-# cagegoryListView
+
+# categoryCreateView
 class categoryCreateView(CreateView):
 	model=Categories
 	fields="__all__"

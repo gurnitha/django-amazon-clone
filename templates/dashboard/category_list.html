@@ -21,7 +21,9 @@
 
 <!-- Block for page main content -->
 {% block page_content %}
-	Create Category
+	{% for category in categories_list %}
+		<p>{{category.title}}</p>
+	{% endfor %}
 {% endblock page_content %}
 <!-- End Block for page main content -->
 

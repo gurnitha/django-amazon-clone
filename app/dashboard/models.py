@@ -3,6 +3,7 @@ from django.db import models
 from django.contrib.auth.models import AbstractUser
 from django.dispatch import receiver
 from django.db.models.signals import post_save
+from django.urls import reverse
 
 # Create your models here.
 
@@ -68,6 +69,10 @@ class Categories(models.Model):
     description=models.TextField()
     created_at=models.DateTimeField(auto_now_add=True)
     is_active=models.IntegerField(default=1)
+
+    # Return to Category List page after adding a category
+    def get_absolute_url(self):
+        return reverse("category_list")
 
 
 #7 SubCategories Model

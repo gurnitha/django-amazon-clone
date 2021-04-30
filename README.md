@@ -554,7 +554,21 @@
         modified:   templates/dashboard/shared/sidebar.html
 
 
+#### 9.11.66 Create Subcategory Create and List Pages
 
+        modified:   README.md
+        modified:   app/dashboard/models.py
+        modified:   app/dashboard/views.py
+        modified:   db.sqlite3
+        new file:   media/Acer_C27-2_eEII61z.jpeg
+        new file:   media/Acer_C27-2_jMVLNXd.jpeg
+        new file:   media/bmw_LfUI90i.jpg
+        new file:   media/toyota.jpg
+        new file:   media/toys1_0MlGteb.jpg
+        modified:   templates/dashboard/base.html
+        modified:   templates/dashboard/home.html
+        new file:   templates/dashboard/subcategory_create.html
+        new file:   templates/dashboard/subcategory_list.html
 
 
 

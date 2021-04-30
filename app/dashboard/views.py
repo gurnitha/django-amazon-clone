@@ -98,7 +98,7 @@ class subCategoryListView(ListView):
 # subCategoryCreateView
 class subCategoryCreateView(SuccessMessageMixin, CreateView):
 	model=SubCategories
-	success_message="Category added!"
+	success_message="Sub Category added!"
 	fields="__all__"
 	template_name='dashboard/subcategory_create.html'
 
@@ -106,6 +106,6 @@ class subCategoryCreateView(SuccessMessageMixin, CreateView):
 # subCategoryUpdateView
 class subCategoryUpdateView(SuccessMessageMixin, UpdateView):
 	model=SubCategories
-	success_message="Category updated!"
+	success_message="Sub Category updated!"
 	fields="__all__"
 	template_name='dashboard/subcategory_update.html'

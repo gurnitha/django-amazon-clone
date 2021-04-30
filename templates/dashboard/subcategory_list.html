@@ -1,0 +1,75 @@
+<!-- templates/dashboard/subcategory_list.html -->
+{% extends './base.html' %}
+
+<!-- Block for title -->
+{% block title %}  
+	Admin Sub Category List
+{% endblock title %}
+<!-- End Block for title -->
+
+<!-- Block for custom css -->
+{% block custom_css %}
+
+{% endblock custom_css %}
+<!-- End Block for custom css -->
+
+<!-- Block for page title -->
+{% block page_title %}
+	Sub Category List
+{% endblock page_title %}
+<!-- End Block for page title -->
+
+<!-- Block for page main content -->
+{% block page_content %}
+<div class="row">
+{% for subcategory in subcategories_list %}
+	<div class="col-12 col-sm-6 col-md-6 col-lg-3">
+        <article class="article article-style-b">
+          <div class="article-header">
+            <div class="article-image" data-background="/media/{{ subcategory.thumbnail }}" style="background-image: url(&quot;assets/img/news/img13.jpg&quot;);">
+            </div>
+            <div class="article-badge">
+              <div class="article-badge-item bg-danger"><i class="fas fa-fire"></i>{{ subcategory.title }}</div>
+            </div>
+          </div>
+          <div class="article-details">
+            <p><span class="badge badge-primary">{{ subcategory.category_id.title }}</span></p>
+            <div class="article-title">
+	            <p>{{ subcategory.description }}</p>
+	            <p>Url slug: {{ subcategory.url_slug }}</p>              
+            </div>
+
+            <div class="article-cta">
+            	<label class="custom-switch mt-2" style="float:left;">
+                    <input 
+                    	type="checkbox" 
+                    	name="custom-switch-checkbox" 
+                    	class="custom-switch-input" 
+                    	{% if subcategory.is_active == 1 %}
+                        	checked
+                    	{% endif %}>
+                    <span class="custom-switch-indicator"></span>
+                    <span class="custom-switch-description">
+                    	<font style="vertical-align: inherit;">
+                    		<font style="vertical-align: inherit;">Active</font>
+                    	</font>
+                    </span>
+                </label>
+            	<a 
+            		href="{% url 'subcategory_update' subcategory.id %}" 
+            		class="btn btn-warning">Edit</a>
+            </div>
+          </div>
+        </article>
+    </div>
+	<!-- <p>{{subcategory.title}}</p> -->
+{% endfor %}
+</div>
+{% endblock page_content %}
+<!-- End Block for page main content -->
+
+<!-- Block for custom js -->
+{% block custom_js %}
+
+{% endblock custom_js %}
+<!-- End Block for custom js

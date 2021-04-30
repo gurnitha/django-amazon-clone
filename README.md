@@ -509,8 +509,11 @@
         modified:   templates/dashboard/category_list.html
 
 
+#### 9.7.2.60 (Part 2) Create Category Edit page - Load values from db to the edit page
 
-
+        modified:   README.md
+        modified:   app/dashboard/views.py
+        new file:   templates/dashboard/category_update.html
 
 
 

@@ -47,7 +47,7 @@ class categoryUpdateView(SuccessMessageMixin, UpdateView):
 	model=Categories
 	success_message="Category updated!"
 	fields="__all__"
-	template_name='dashboard/category_create.html'
+	template_name='dashboard/category_update.html'
 
 
 # adminLogin

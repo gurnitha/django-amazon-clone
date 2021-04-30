@@ -516,6 +516,13 @@
         new file:   templates/dashboard/category_update.html
 
 
+#### 9.7.3.61 (Part 3) Create Category Edit page - Showing the current thumbnail in edit page
+
+        modified:   README.md
+        modified:   config/__pycache__/urls.cpython-39.pyc
+        modified:   db.sqlite3
+        new file:   media/toys1.jpg
+        modified:   templates/dashboard/category_update.html
 
 
 

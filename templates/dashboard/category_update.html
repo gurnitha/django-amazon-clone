@@ -1,4 +1,4 @@
-<!-- ecommerce/templates/dashboard/category_list.html -->
+ecommerce/templates/dashboard/category_list.html -->
 {% extends './base.html' %}
 
 <!-- Block for title -->
@@ -35,6 +35,7 @@
 						{% for field in form %}
 		                <div class="form-group">
 		                    <label>{{ field.label }}</label>
+		                    
 		                    <input 
 		                    	type="{{ field.field.widget.input_type }}"
 		                    	name={{ field.name }} 
@@ -47,6 +48,16 @@
 		                    	</div>	    
 		                    {% endif %}	
 		                </div>
+			                <!-- Showing the current thumbnail -->
+			                {% if field.field.widget.input_type == "file" %}
+			                <div class="form-group">
+			                	<label>Current:{{ field.label }}</label>
+			                	<br>
+			                	<div class="card-body">
+			                        <img src="/media/{{ field.value }}" style="height:250px;" />
+			                	</div>
+			                    </div>
+			                {% endif %}
 		                {% endfor %}
 						<button 
 							type="submit"
@@ -63,4 +74,4 @@
 <!-- Block for custom js -->
 {% block custom_js %}
 {% endblock custom_js %}
-<!-- End Block for custom js -->
+<!-- End Block for custom js

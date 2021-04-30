@@ -1,0 +1,65 @@
+<!-- templates/dashboard/merchant_create.html -->
+{% extends './base.html' %}
+
+<!-- Block for title -->
+{% block title %}  
+	Admin Create Merchant
+{% endblock title %}
+<!-- End Block for title -->
+
+<!-- Block for custom css -->
+{% block custom_css %}
+
+{% endblock custom_css %}
+<!-- End Block for custom css -->
+
+<!-- Block for page title -->
+{% block page_title %}
+	Create Merchant
+{% endblock page_title %}
+<!-- End Block for page title -->
+
+<!-- Block for page main content -->
+{% block page_content %}
+	<div class="row">
+	    <div class="col-12 col-md-6 col-lg-6">
+	        <div class="card">
+
+	            <div class="card-header">
+	                <h4>Merchant Users</h4>
+	            </div>
+
+	            <div class="card-body">
+					<form method="POST", enctype="multipart/form-data">
+						{% csrf_token %}
+						{% for field in form %}
+		                <div class="form-group">
+		                    <label>{{ field.label }}</label>
+		                    <input 
+		                    	type="{{ field.field.widget.input_type }}"
+		                    	name={{ field.name }} 
+		                    	id={{ field.name }}
+		                    	class="form-control">
+		                    {% if field.errors %}
+		                    	<div class="alert alert-danger" style="margin:10px">
+		                    		{{ field.errors }}
+		                    	</div>	    
+		                    {% endif %}	
+		                </div>
+		                {% endfor %}
+						<button 
+							type="submit"
+							class="btn btn-primary btn-block">
+							Save Merchant Users</button>
+					</form>
+				</div>
+			</div>	
+		</div>
+	</div>
+{% endblock page_content %}
+<!-- End Block for page main content -->
+
+<!-- Block for custom js -->
+{% block custom_js %}
+{% endblock custom_js %}
+<!-- End Block for custom js -->

@@ -592,7 +592,10 @@
         modified:   app/dashboard/views.py
         modified:   config/urls.py
 
+#### 10.3.70 Create CreateView Template for Merchant User 
 
+        modified:   README.md
+        new file:   templates/dashboard/merchant_create.html
 
 
 

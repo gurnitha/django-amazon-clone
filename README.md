@@ -525,7 +525,10 @@
         modified:   templates/dashboard/category_update.html
 
 
+#### 9.8.1.62 (Part 1) Make Sidebar Active Based On Page
 
+        modified:   README.md
+        modified:   templates/dashboard/shared/sidebar.html
 
 
 

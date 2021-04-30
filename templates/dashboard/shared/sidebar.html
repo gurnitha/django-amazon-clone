@@ -9,23 +9,25 @@
       </div>
       <ul class="sidebar-menu">
         <li class="menu-header">Dashboard</li>
-        <li class="dropdown active">
-          <a href="#" class="nav-link has-dropdown"><i class="fas fa-fire"></i><span>Dashboard</span></a>
-          <ul class="dropdown-menu">
-            <li class=active><a class="nav-link" href="index-0.html">General Dashboard</a></li>
-            <li><a class="nav-link" href="index.html">Ecommerce Dashboard</a></li>
-          </ul>
-        </li>
-        <li class="menu-header">Starter</li>
-        <li class="dropdown">
-          <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-columns"></i> <span>Layout</span></a>
-          <ul class="dropdown-menu">
-            <li><a class="nav-link" href="layout-default.html">Default Layout</a></li>
-            <li><a class="nav-link" href="layout-transparent.html">Transparent Sidebar</a></li>
-            <li><a class="nav-link" href="layout-top-navigation.html">Top Navigation</a></li>
-          </ul>
-        </li>
         
+        <!-- MAKING SIDEBAR DROPDOWN MENU ACTIVE AND NOT ACTIVE  -->
+
+        <!-- Step 1: Showing url path as variable in category_list and category_create -->
+        {% url "category_list"   as category_list %}
+        {% url "category_create" as category_create %}
+        
+        <!-- Step 2: Put this Category title always active either the request is category_list or category_create -->
+        <li class="dropdown {% if request.path == category_list %}active{% endif %} {% if request.path == category_create %}active{% endif %}">
+          <a href="#" class="nav-link has-dropdown"><i class="fas fa-fire"></i><span>Category</span></a>
+          
+          <!-- Step 3: Make Active and Not Active menu -->
+          <ul class="dropdown-menu">
+            <!-- Step 3.1: Make Category List acitve -->
+            <li class="{% if request.path == category_list %}active{% endif %}"><a class="nav-link" href="{% url 'category_list' %}">All Categories</a></li>
+            <!-- Step 3.2: Make the Create Category active -->
+            <li class="{% if request.path == category_create %}active{% endif %}"><a class="nav-link" href="{% url 'category_create' %}">Add Category</a></li>
+          </ul>
+        </li>
       </ul>
 
       <div class="mt-4 mb-4 p-3 hide-sidebar-mini">

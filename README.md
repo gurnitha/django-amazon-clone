@@ -578,10 +578,12 @@
         new file:   templates/dashboard/subcategory_update.html
 
 
+#### 10.1.68 Small Change in Category List
 
-
-
-
+        modified:   README.md
+        modified:   db.sqlite3
+        modified:   templates/dashboard/category_list.html
+        modified:   templates/dashboard/subcategory_list.html
 
 
 

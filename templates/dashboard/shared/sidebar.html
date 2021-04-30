@@ -19,7 +19,6 @@
         
         <!-- Step 2: Put this Category title always active either the request is category_list, category_edit, or category_create -->
         <li class="dropdown 
-
           {% if request.path == category_list %}active{% endif %}
           {% if request.path == category_create %}active{% endif %}
           {% if request.path == category_update %}active{% endif %}">

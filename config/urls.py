@@ -14,7 +14,10 @@ from app.dashboard.views import (
     adminLogoutProcess,
     categoryListView,
     categoryCreateView,
-    categoryUpdateView)
+    categoryUpdateView,
+    subCategoryListView,
+    subCategoryCreateView,
+    subCategoryUpdateView)
 
 urlpatterns = [
 	# MAIN'S APP PATHS
@@ -22,42 +25,38 @@ urlpatterns = [
 
 	# DASHBOARD'S APP PATHS 
 
+    # ADMIN DEFAULT
     # path('admin/', admin.site.urls),
     
+    # ADMIN
+    
     # Admin home
-    path('admin/home', 
-    	adminHome, 
-    	name='admin_home'),
+    path('admin/home', adminHome, name='admin_home'),
+    # Admin login
+    path('admin/', adminLogin, name='admin_login'),
+    # Admin login process
+    path('admin/login_process', adminLoginProcess, name='admin_login_process'),
+    # Admin logout process
+    path('admin/logout_process', adminLogoutProcess, name='admin_logout_process'),    
+
+    # CATEGORIES
 
     # Category list
-    path('admin/category/list',
-        categoryListView.as_view(),
-        name='category_list'),
-
+    path('admin/category/list', categoryListView.as_view(), name='category_list'),
     # Category create
-    path('admin/category/create',
-        categoryCreateView.as_view(),
-        name='category_create'),
-
+    path('admin/category/create', categoryCreateView.as_view(), name='category_create'),
     # Category update
-    path('admin/category/update/<slug:pk>',
-        categoryUpdateView.as_view(),
-        name='category_update'),
+    path('admin/category/update/<slug:pk>', categoryUpdateView.as_view(), name='category_update'),
+    
 
-    # Admin login
-    path('admin/', 
-    	adminLogin, 
-    	name='admin_login'),
-
-    # Admin login process
-    path('admin/login_process', 
-        adminLoginProcess, 
-        name='admin_login_process'),
-
-    # Admin logout process
-    path('admin/logout_process', 
-        adminLogoutProcess, 
-        name='admin_logout_process'),
+    # SUB CATEGORIES
+    
+    # Subcategory list
+    path('admin/subcategory/list', subCategoryListView.as_view(), name='subcategory_list'),
+    # Subcategory create
+    path('admin/subcategory/create', subCategoryCreateView.as_view(), name='subcategory_create'),
+    # Subcategory update
+    path('admin/subcategory/update/<slug:pk>', subCategoryUpdateView.as_view(), name='subcategory_update'),
 ]
 
 urlpatterns += static(

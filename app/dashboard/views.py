@@ -15,8 +15,8 @@ from django.views.generic import (
     DetailView)
 
 # Import models
-from app.dashboard.models import (
-	Categories,)
+from app.dashboard.models import Categories
+from app.dashboard.models import SubCategories
 
 
 # Create your views here.
@@ -26,28 +26,6 @@ from app.dashboard.models import (
 @login_required(login_url='/admin/')
 def adminHome(request):
 	return render(request, 'dashboard/home.html')
-
-
-# categoryListView
-class categoryListView(ListView):
-	model=Categories
-	template_name='dashboard/category_list.html'
-
-
-# categoryCreateView
-class categoryCreateView(SuccessMessageMixin, CreateView):
-	model=Categories
-	success_message="Category added!"
-	fields="__all__"
-	template_name='dashboard/category_create.html'
-
-
-# categoryUpdateView
-class categoryUpdateView(SuccessMessageMixin, UpdateView):
-	model=Categories
-	success_message="Category updated!"
-	fields="__all__"
-	template_name='dashboard/category_update.html'
 
 
 # adminLogin
@@ -83,3 +61,51 @@ def adminLogoutProcess(request):
 	logout(request)
 	messages.success(request, 'Logged out successfully!')
 	return HttpResponseRedirect(reverse('admin_login'))
+
+# CATEGORY
+
+# categoryListView
+class categoryListView(ListView):
+	model=Categories
+	template_name='dashboard/category_list.html'
+
+
+# categoryCreateView
+class categoryCreateView(SuccessMessageMixin, CreateView):
+	model=Categories
+	success_message="Category added!"
+	fields="__all__"
+	template_name='dashboard/category_create.html'
+
+
+# categoryUpdateView
+class categoryUpdateView(SuccessMessageMixin, UpdateView):
+	model=Categories
+	success_message="Category updated!"
+	fields="__all__"
+	template_name='dashboard/category_update.html'
+
+
+
+# SUB CATEGORY
+
+# subCategoryListView
+class subCategoryListView(ListView):
+	model=SubCategories
+	template_name='dashboard/subcategory_list.html'
+
+
+# subCategoryCreateView
+class subCategoryCreateView(SuccessMessageMixin, CreateView):
+	model=SubCategories
+	success_message="Category added!"
+	fields="__all__"
+	template_name='dashboard/subcategory_create.html'
+
+
+# subCategoryUpdateView
+class subCategoryUpdateView(SuccessMessageMixin, UpdateView):
+	model=SubCategories
+	success_message="Category updated!"
+	fields="__all__"
+	template_name='dashboard/subcategory_update.html'

@@ -537,9 +537,12 @@
         modified:   templates/dashboard/shared/sidebar.html
 
 
+#### 9.9.64 Create paths for Sub Categories and views
 
-
-
+        modified:   README.md
+        modified:   app/dashboard/views.py
+        modified:   config/urls.py
+        modified:   templates/dashboard/shared/sidebar.html
 
 
 

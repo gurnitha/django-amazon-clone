@@ -607,8 +607,10 @@
 
 #### Modified README.md
 
+#### 10.4.2.72 (Part 2) Create Merchant User Menu in Sidebar
 
-
+        modified:   README.md
+        modified:   templates/dashboard/shared/sidebar.html
 
 
 

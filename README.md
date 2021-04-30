@@ -598,14 +598,14 @@
         modified:   README.md
         new file:   templates/dashboard/merchant_create.html
 
-#### 10.4.71 Create Merchant User Menu in Sidebar
+#### 10.4.1.71 (Part 1) Create Merchant User Menu in Sidebar
 
         modified:   README.md
         modified:   app/dashboard/views.py
         modified:   config/urls.py
         modified:   templates/dashboard/shared/sidebar.html
 
-
+#### Modified README.md
 
 
 

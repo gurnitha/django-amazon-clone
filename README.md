@@ -585,6 +585,7 @@
         modified:   templates/dashboard/category_list.html
         modified:   templates/dashboard/subcategory_list.html
 
+## MERCHANT
 
 #### 10.2.69 Create merchantUserCreateView basics and merchant/create path
 
@@ -597,9 +598,12 @@
         modified:   README.md
         new file:   templates/dashboard/merchant_create.html
 
+#### 10.4.71 Create Merchant User Menu in Sidebar
 
-
-
+        modified:   README.md
+        modified:   app/dashboard/views.py
+        modified:   config/urls.py
+        modified:   templates/dashboard/shared/sidebar.html
 
 
 

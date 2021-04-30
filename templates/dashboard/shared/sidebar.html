@@ -12,6 +12,7 @@
         
         <!-- MAKING SIDEBAR DROPDOWN MENU ACTIVE AND NOT ACTIVE  -->
 
+        <!-- CATEGORY -->
         <!-- Step 1: Showing url path as variable in category_list and category_create -->
         {% url "category_list"   as category_list %}
         {% url "category_create" as category_create %}
@@ -38,6 +39,7 @@
               <a class="nav-link" href="{% url 'category_create' %}">Add Category</a></li>
           </ul>
         </li>
+        <!-- END CATEGORY -->
 
         <!-- SUB CATEGORY MENU -->
         {% url 'subcategory_list' as subcategory_list %}
@@ -59,6 +61,40 @@
               <a class="nav-link" href="{% url 'subcategory_create' %}">Add Sub Categories</a></li>
           </ul>
         </li>
+        <!-- END SUB CATEGORY MENU -->
+
+        <!-- MERCHAN USERS MENU -->
+        
+        {% url 'merchant_create' as merchant_create %}
+        {% url 'merchant_list' as merchant_list %}
+        {% url 'merchant_update' id as merchant_update %}
+        
+        <li class="dropdown 
+          {% if request.path == merchant_create %}active{% endif %}
+          {% if request.path == merchant_list %}active{% endif %} 
+          {% if request.path == merchant_update %}active{% endif %}">
+          
+          <a href="#" 
+            class="nav-link has-dropdown">
+            <i class="fas fa-dice-d6"></i>
+            <span>Merchant User</span></a>
+          <ul class="dropdown-menu">
+            <li class='
+              {% if request.path == merchant_create %}active{% endif %}'>
+              <a class="nav-link" 
+                href="{% url 'merchant_create' %}">
+                Add Merchant User</a>
+            </li>
+            <li class='
+              {% if request.path == merchant_list %}active{% endif %} 
+              {% if request.path == merchant_update %}active{% endif %}'>
+              <a class="nav-link" 
+                href="">
+                Merchant User List</a>
+            </li>
+          </ul>
+        </li>  
+        <!-- END MERCHAN USERS MENU -->
 
       </ul>
 

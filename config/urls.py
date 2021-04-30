@@ -18,7 +18,9 @@ from app.dashboard.views import (
     subCategoryListView,
     subCategoryCreateView,
     subCategoryUpdateView,
-    merchantUserCreateView)
+    merchantUserListView,
+    merchantUserCreateView,
+    merchantUserUpdateView)
 
 urlpatterns = [
 	# MAIN'S APP PATHS
@@ -63,6 +65,9 @@ urlpatterns = [
     # MERCHANT USERS
 
     path('admin/merchant/create', merchantUserCreateView.as_view(), name="merchant_create"),
+    path('admin/merchant/list', merchantUserListView.as_view(), name="merchant_list"),
+    path('admin/merchant/update/<slug:pk>', merchantUserUpdateView.as_view(), name="merchant_update"),   
+
 
 ]
 

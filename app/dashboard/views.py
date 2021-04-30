@@ -18,8 +18,7 @@ from django.views.generic import (
 from app.dashboard.models import (
 	Categories,
 	SubCategories,
-	CustomUser,
-	MarchantUser)
+	CustomUser)
 
 
 # Create your views here.
@@ -116,12 +115,21 @@ class subCategoryUpdateView(SuccessMessageMixin, UpdateView):
 
 # MERCHANT USER
 
-# merchantUserCreateView Model
+# merchantUserListView
+class merchantUserListView(SuccessMessageMixin,CreateView):
+	pass
+
+
+# merchantUserCreateView
 class merchantUserCreateView(SuccessMessageMixin,CreateView):
     template_name="dashboard/merchant_create.html"
     model=CustomUser
-	fields="__all__"
+    fields="__all__"
 
+
+# merchantUserUpdateView
+class merchantUserUpdateView(SuccessMessageMixin,CreateView):
+	pass
 
 
 

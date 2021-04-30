@@ -570,9 +570,12 @@
         new file:   templates/dashboard/subcategory_create.html
         new file:   templates/dashboard/subcategory_list.html
 
+#### 9.12.67 Create Subcategory Update page
 
-
-
+        modified:   README.md
+        modified:   db.sqlite3
+        new file:   media/toyota_Xduu2h9.jpg
+        new file:   templates/dashboard/subcategory_update.html
 
 
 

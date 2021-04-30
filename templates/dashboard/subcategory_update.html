@@ -1,0 +1,93 @@
+<!-- templates/dashboard/subcategory_create.html -->
+{% extends './base.html' %}
+
+<!-- Block for title -->
+{% block title %}  
+	Admin Update Sub Category
+{% endblock title %}
+<!-- End Block for title -->
+
+<!-- Block for custom css -->
+{% block custom_css %}
+
+{% endblock custom_css %}
+<!-- End Block for custom css -->
+
+<!-- Block for page title -->
+{% block page_title %}
+	Update Sub Category
+{% endblock page_title %}
+<!-- End Block for page title -->
+
+<!-- Block for page main content -->
+{% block page_content %}
+<div class="row">
+	<div class="col-6 col-md-6 col-lg-6">
+		<div class="card">
+		    <div class="card-header">
+		    <h4>Update Sub Categories</h4>
+		    </div>
+		    <div class="card-body">
+		    <form method="post" enctype="multipart/form-data">
+		        {% csrf_token %}
+		        {% for field in form %}
+		        <div class="form-group">
+		            <label>{{ field.label }}</label>
+		            {% if field.field.widget.input_type != "select" %}
+		            <input 
+		            	type="{{ field.field.widget.input_type }}" 
+		            	name={{ field.name }} 
+		            	id="{{ field.name }}" 
+		            	value="{{ field.value }}"
+		            	class="form-control">
+		            {% endif %}
+
+		            {% if field.field.widget.input_type == "select" %}
+		            <select 
+		            	name={{ field.name }} 
+		            	id="{{ field.name }}" 
+		            	class="form-control">
+		                {% for id,value in field.field.choices %}
+		                    <option 
+		                    	value="{{ id }}"
+		                    	{% if id == field.value %}
+		                    	    selected
+		                    	{% endif %}>
+		                    	{{ value }}
+		                    </option>
+		                {% endfor %}
+		            </select>
+		            {% endif %}
+
+	                <!-- Showing the current thumbnail -->
+	                {% if field.field.widget.input_type == "file" %}
+	                <br>
+	                <div class="form-group">
+	                	<label>Current:{{ field.label }}</label>
+	                	<br>
+	                	<div class="card-body">
+	                        <img src="/media/{{ field.value }}" style="height:250px;" />
+	                	</div>
+	                </div>
+	                {% endif %}
+		            
+		            {% if field.errors %}
+		            <div class="alert alert-danger" style="margin:10px">
+		                {{ field.errors }}
+		            </div>
+		            {% endif %}
+		        </div>
+		        {% endfor %}
+		        
+		        <button type="submit" class="btn btn-primary btn-block">Save Sub Category</button>
+		    </form>
+		</div>
+	</div>
+</div>
+{% endblock page_content %}
+<!-- End Block for page main content -->
+
+<!-- Block for custom js -->
+{% block custom_js %}
+{% endblock custom_js %}
+<!-- End Block for custom js -->

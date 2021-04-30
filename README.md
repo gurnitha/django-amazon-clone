@@ -545,9 +545,13 @@
         modified:   templates/dashboard/shared/sidebar.html
 
 
+#### 9.10.65 House keeping 
 
-
-
+        modified:   README.md
+        modified:   templates/dashboard/category_create.html
+        modified:   templates/dashboard/category_list.html
+        modified:   templates/dashboard/category_update.html
+        modified:   templates/dashboard/shared/sidebar.html
 
 
 

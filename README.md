@@ -530,6 +530,12 @@
         modified:   README.md
         modified:   templates/dashboard/shared/sidebar.html
 
+#### 9.8.2.63 (Part 2) Make Sidebar Active Based On Page (All Cateagories, Edit A Category, and Add a Category)
+
+        modified:   README.md
+        modified:   templates/dashboard/base.html
+        modified:   templates/dashboard/shared/sidebar.html
+
 
 
 

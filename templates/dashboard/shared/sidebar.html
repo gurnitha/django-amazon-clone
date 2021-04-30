@@ -15,17 +15,28 @@
         <!-- Step 1: Showing url path as variable in category_list and category_create -->
         {% url "category_list"   as category_list %}
         {% url "category_create" as category_create %}
+        {% url "category_update" id as category_update %}
         
-        <!-- Step 2: Put this Category title always active either the request is category_list or category_create -->
-        <li class="dropdown {% if request.path == category_list %}active{% endif %} {% if request.path == category_create %}active{% endif %}">
+        <!-- Step 2: Put this Category title always active either the request is category_list, category_edit, or category_create -->
+        <li class="dropdown 
+
+          {% if request.path == category_list %}active{% endif %}
+          {% if request.path == category_create %}active{% endif %}
+          {% if request.path == category_update %}active{% endif %}">
+         
           <a href="#" class="nav-link has-dropdown"><i class="fas fa-fire"></i><span>Category</span></a>
           
           <!-- Step 3: Make Active and Not Active menu -->
           <ul class="dropdown-menu">
-            <!-- Step 3.1: Make Category List acitve -->
-            <li class="{% if request.path == category_list %}active{% endif %}"><a class="nav-link" href="{% url 'category_list' %}">All Categories</a></li>
+            <!-- Step 3.1: Make All Categories menu acitve while showing All Categories or Edit a Category -->
+            <li class="
+              {% if request.path == category_list %}active{% endif %}
+              {% if request.path == category_update %}active{% endif %}">
+              <a class="nav-link" href="{% url 'category_list' %}">All Categories</a></li>
             <!-- Step 3.2: Make the Create Category active -->
-            <li class="{% if request.path == category_create %}active{% endif %}"><a class="nav-link" href="{% url 'category_create' %}">Add Category</a></li>
+            <li class="
+              {% if request.path == category_create %}active{% endif %}">
+              <a class="nav-link" href="{% url 'category_create' %}">Add Category</a></li>
           </ul>
         </li>
       </ul>

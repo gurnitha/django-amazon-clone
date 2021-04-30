@@ -586,6 +586,11 @@
         modified:   templates/dashboard/subcategory_list.html
 
 
+#### 10.2.69 Create merchantUserCreateView basics and merchant/create path
+
+        modified:   README.md
+        modified:   app/dashboard/views.py
+        modified:   config/urls.py
 
 
 

@@ -15,8 +15,11 @@ from django.views.generic import (
     DetailView)
 
 # Import models
-from app.dashboard.models import Categories
-from app.dashboard.models import SubCategories
+from app.dashboard.models import (
+	Categories,
+	SubCategories,
+	CustomUser,
+	MarchantUser)
 
 
 # Create your views here.
@@ -109,3 +112,116 @@ class subCategoryUpdateView(SuccessMessageMixin, UpdateView):
 	success_message="Sub Category updated!"
 	fields="__all__"
 	template_name='dashboard/subcategory_update.html'
+
+
+# MERCHANT USER
+
+# merchantUserCreateView Model
+class merchantUserCreateView(SuccessMessageMixin,CreateView):
+    template_name="dashboard/merchant_create.html"
+    model=CustomUser
+	fields="__all__"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
